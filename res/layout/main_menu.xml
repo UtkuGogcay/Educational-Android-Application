@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:visibility="visible">
+
+    <ImageButton
+        android:id="@+id/ibutton_months"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/digital_clock"
+        android:scaleType="fitCenter"
+
+        app:layout_constraintStart_toEndOf="@+id/ibutton_days"
+        app:layout_constraintTop_toBottomOf="@+id/textView_26"
+        app:srcCompat="@drawable/months" />
+
+    <ImageButton
+        android:id="@+id/ibutton_seasons"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/multiplication"
+        app:layout_constraintStart_toEndOf="@+id/ibutton_months"
+        app:layout_constraintTop_toBottomOf="@+id/textView_multiplication2"
+        app:srcCompat="@drawable/icon_question_mark" />
+
+    <TextView
+        android:id="@+id/textView_3"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/months"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textView_memory2"
+        app:layout_constraintTop_toBottomOf="@+id/ibutton_months" />
+
+    <ImageButton
+        android:id="@+id/ibutton_days"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/analog_clock"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_memory"
+        app:srcCompat="@drawable/days" />
+
+
+    <TextView
+        android:id="@+id/textView_memory2"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:contentDescription="@string/memory"
+        android:gravity="center"
+        android:text="@string/days"
+        app:layout_constraintEnd_toStartOf="@+id/textView_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibutton_days" />
+
+    <TextView
+        android:id="@+id/textView_multiplication3"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/findpairs"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_3"
+        app:layout_constraintTop_toBottomOf="@+id/ibutton_seasons" />
+
+    <ImageButton
+        android:id="@+id/ibutton_directions"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="31dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/digital_clock"
+        app:layout_constraintEnd_toStartOf="@+id/ibutton_spelling"
+        app:layout_constraintStart_toEndOf="@+id/ibutton_memory"
+        app:layout_constraintTop_toBottomOf="@+id/textView_digital_clock"
+        app:srcCompat="@drawable/directions_icon" />
+
+    <TextView
+        android:id="@+id/textView_memory"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/memory"
+        android:gravity="center"
+        android:text="@string/memory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibutton_memory" />
+
+    <ImageButton
+        android:id="@+id/ibutton_memory"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/analog_clock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_analog_clock"
+        app:srcCompat="@drawable/memory" />
+
+    <TextView
+        android:id="@+id/textView_26"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/directions"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textView_memory"
+        app:layout_constraintTop_toBottomOf="@+id/ibutton_directions" />
+
+    <TextView
+        android:id="@+id/textView_multiplication2"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/spelling"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_26"
+        app:layout_constraintTop_toBottomOf="@+id/ibutton_spelling" />
+
+    <ImageButton
+        android:id="@+id/ibutton_spelling"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/multiplication"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/ibutton_directions"
+        app:layout_constraintTop_toBottomOf="@+id/textView_multiplication"
+        app:srcCompat="@drawable/spelling_icon"
+
+        />
+
+    <ImageButton
+        android:id="@+id/ibutton_multiplication"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/multiplication"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/multiplication__1_" />
+
+    <TextView
+        android:id="@+id/textView_multiplication"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/multiplication"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_digital_clock"
+        app:layout_constraintTop_toBottomOf="@+id/ibutton_multiplication" />
+
+    <ImageButton
+        android:id="@+id/ibutton_digital_clock"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="@string/digital_clock"
+        app:layout_constraintEnd_toStartOf="@+id/ibutton_multiplication"
+        app:layout_constraintStart_toEndOf="@+id/analog_clocks"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/digital_clock_icon" />
+
+    <TextView
+        android:id="@+id/textView_digital_clock"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/digital_clock"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textView_analog_clock"
+        app:layout_constraintTop_toBottomOf="@+id/ibutton_digital_clock" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/textView_analog_clock"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/analog_clocks"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/analog_clocks" />
+
+    <ImageButton
+        android:id="@+id/analog_clocks"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/analog_clock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/indir__2_" />
+
+    <ImageButton
+        android:id="@+id/ibutton_pairs"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_3"
+        app:srcCompat="@drawable/icon_question_mark" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/findpairs"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibutton_pairs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

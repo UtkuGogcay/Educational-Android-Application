@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".multiplication">
+
+    <ImageButton
+        android:id="@+id/imageViewPairs8"
+        android:layout_width="128dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/icon_question_mark"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPairs7"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPairs5"
+        tools:src="@drawable/icon_question_mark" />
+
+    <ImageButton
+        android:id="@+id/imageViewPairs11"
+        android:layout_width="128dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_question_mark"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPairs10"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPairs8"
+        tools:src="@drawable/icon_question_mark" />
+
+    <ImageButton
+        android:id="@+id/imageViewPairs10"
+        android:layout_width="128dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_question_mark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPairs7"
+        tools:src="@drawable/icon_question_mark" />
+
+    <ImageButton
+        android:id="@+id/imageViewPairs12"
+        android:layout_width="128dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_question_mark"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPairs11"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPairs9"
+        tools:src="@drawable/icon_question_mark" />
+
+    <ImageButton
+        android:id="@+id/imageViewPairs7"
+        android:layout_width="128dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/icon_question_mark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPairs4"
+        tools:src="@drawable/icon_question_mark" />
+
+    <ImageButton
+        android:id="@+id/imageViewPairs9"
+        android:layout_width="128dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/icon_question_mark"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPairs8"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPairs6"
+        tools:src="@drawable/icon_question_mark" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ImageButton
+        android:id="@+id/imageViewPairs1"
+        android:layout_width="128dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/icon_question_mark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+        tools:src="@drawable/icon_question_mark" />
+
+    <ImageButton
+        android:id="@+id/imageViewPairs2"
+        android:layout_width="128dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/icon_question_mark"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPairs1"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+        tools:src="@drawable/icon_question_mark" />
+
+    <ImageButton
+        android:id="@+id/imageViewPairs6"
+        android:layout_width="128dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_question_mark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPairs3"
+        tools:src="@drawable/icon_question_mark" />
+
+    <ImageButton
+        android:id="@+id/imageViewPairs5"
+        android:layout_width="128dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_question_mark"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPairs4"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPairs2"
+        tools:src="@drawable/icon_question_mark" />
+
+    <ImageButton
+        android:id="@+id/imageViewPairs4"
+        android:layout_width="128dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_question_mark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPairs1"
+        tools:src="@drawable/icon_question_mark" />
+
+    <ImageButton
+        android:id="@+id/imageViewPairs3"
+        android:layout_width="128dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="1dp"
+        android:src="@drawable/icon_question_mark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+        tools:src="@drawable/icon_question_mark" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
